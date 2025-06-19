@@ -1,21 +1,23 @@
-import Header from "./components/header"
-import Hero from "./components/hero"
-import Skills from "./components/skills"
-import Projects from "./components/projects"
-import Contact from "./components/contact"
-import Footer from "./components/footer"
-import ScrollToTop from "./components/scroll-to-top"
+import Header from "@/components/Header"
+import Hero from "@/components/Hero"
+import Skills from "@/components/Skills"
+import Projects from "@/components/Projects"
+import Contact from "@/components/Contact"
+import Footer from "@/components/Footer"
+import ScrollToTop from "@/components/ScrollToTop"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white">
       <Header />
-      <Hero />
-      <Skills />
-      <Projects />
-      <Contact />
+      <main>
+        <Hero />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
       <Footer />
       <ScrollToTop />
-    </main>
+    </div>
   )
 }
